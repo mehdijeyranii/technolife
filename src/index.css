@@ -1,5 +1,18 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body{
-    @apply text-zinc-800 bg-zinc-50 leading-relaxed;
+@layer base {
+    @font-face {
+        font-family: "Tilt Neon";
+        src: url("./assets/fonts/tilt-neon/TiltNeon-Regular.woff2")
+                format("woff2"),
+            url("./assets/fonts/tilt-neon/TiltNeon-Regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body {
+        @apply text-zinc-500 bg-zinc-50 leading-relaxed font-tilt-neon;
+    }
 }

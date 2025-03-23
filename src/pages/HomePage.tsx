@@ -1,10 +1,10 @@
-import React from "react";
+import MainLayout from "../layouts/MainLayout"
 
 const HomePage = () => {
     return (
-        <div className="">
-            
-        </div>
+        <MainLayout>
+            Hello
+        </MainLayout>
     );
 };
 

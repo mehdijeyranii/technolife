@@ -1,9 +1,11 @@
-import React from 'react'
+import MainLayout from "../layouts/MainLayout";
 
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+    return (
+        <MainLayout>
+            <div>About</div>
+        </MainLayout>
+    );
+};
 
-export default About
+export default About;
